@@ -31,7 +31,7 @@
 [点击进入](https://cloud.tencent.com/document/product/619/11442#.E6.9C.AC.E5.9C.B0.E5.A6.82.E4.BD.95.E6.90.AD.E5.BB.BA.E5.BC.80.E5.8F.91.E7.8E.AF.E5.A2.83)
 
 # 项目目录结构 #
-本项目所有的业务逻辑都在**controllers**文件夹中
+本项目所有的业务逻辑都在**controllers**文件夹中  
 本项目所有的接口都写在**router文件夹下的index.js**里边
     
     //首页数据
