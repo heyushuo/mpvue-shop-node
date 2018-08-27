@@ -137,10 +137,10 @@
 ### 2、分类页面，分类子页面以及搜索功能、搜索列表、历史记录、模糊搜索提示
 ![](https://user-gold-cdn.xitu.io/2018/8/25/1657185090f5d3cd?w=327&h=573&f=gif&s=884918)
 ![](https://user-gold-cdn.xitu.io/2018/8/25/1657188bf2746d85?w=327&h=573&f=gif&s=585295)
-###3、购物车功能添加购物车,单选多选,删除和商品收藏功能
+### 3、购物车功能添加购物车,单选多选,删除和商品收藏功能
 ![](https://user-gold-cdn.xitu.io/2018/8/25/165719656d9bdb5b?w=327&h=573&f=gif&s=1979300)
 ![](https://user-gold-cdn.xitu.io/2018/8/25/165719e76bd00f05?w=327&h=573&f=gif&s=1770550)
-###4、地址管理
+### 4、地址管理
 ![](https://user-gold-cdn.xitu.io/2018/8/25/165719e2d9b28ee1?w=327&h=573&f=gif&s=611343)
 
 # 小程序端传送门 [点击进入小程序地址](https://github.com/heyushuo/mpvue-shop)
