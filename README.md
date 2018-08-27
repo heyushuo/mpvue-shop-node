@@ -14,8 +14,8 @@
 #### 启动项目
     npm run dev
 # 需要注意的地方 #
-## 1.创建数据库nodemysql并导入项目根目录下的nodemysql.sql ##
-## 2.项目分目录有一个config.js文件在这里可以配置数据相关 ##
+### 1.项目开始前创建数据库nodemysql并导入项目根目录下的nodemysql.sql ##
+### 2.项目分目录有一个config.js文件在这里可以配置数据相关 ##
   	mysql: {
 		host: 'localhost',
 		port: 3306,
