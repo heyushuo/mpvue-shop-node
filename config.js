@@ -37,9 +37,9 @@ const CONF = {
   mysql: {
     host: 'localhost',
     port: 3306,
-    user: 'root',
+    user: 'admin',
     db: 'nodemysql',
-    pass: '123456',
+    pass: 'admin',
     char: 'utf8mb4'
   },
 

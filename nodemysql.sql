@@ -24,7 +24,7 @@ CREATE TABLE `csessioninfo` (
   `uuid` varchar(100) NOT NULL,
   `skey` varchar(100) NOT NULL,
   `create_time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
-  `last_visit_time` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00',
+  `last_visit_time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `session_key` varchar(100) NOT NULL,
   `user_info` varchar(2048) NOT NULL,
   PRIMARY KEY (`open_id`),
