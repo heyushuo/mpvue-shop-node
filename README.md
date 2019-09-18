@@ -19,9 +19,9 @@
   	mysql: {
 		host: 'localhost',
 		port: 3306,
-		user: 'root',   
+		user: 'admin',   
 		db: 'nodemysql',  //数据库名字
-		pass: '123456',   //数据库密码
+		pass: 'admin',   //数据库密码
 		char: 'utf8mb4'
     };
 
