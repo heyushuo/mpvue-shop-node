@@ -6,7 +6,7 @@ const path = require('path')
  */
 const mapDir = d => {
   const tree = {}
-  console.log(fs.readdirSync(d)); //[ 'address','brand', 'cart', 'category', 'collect', 'comment', 'feedback', 'goods', 'home', 'index.js', 'login.js', 'message.js', 'order', 'search', 'topic', 'tunnel.js', 'upload.js', 'user.js']
+  // console.log(fs.readdirSync(d)); //[ 'address','brand', 'cart', 'category', 'collect', 'comment', 'feedback', 'goods', 'home', 'index.js', 'login.js', 'message.js', 'order', 'search', 'topic', 'tunnel.js', 'upload.js', 'user.js']
   // 获得当前文件夹下的所有的文件夹和文件 分成两组,文件夹一组,文件一组 [['address','brand', 'cart'],[index.js,login.js]]
   const [dirs, files] = _(fs.readdirSync(d)).partition(p => fs.statSync(path.join(d, p)).isDirectory())
   // 映射文件夹

@@ -1,40 +1,42 @@
-# 本项目使用的是腾讯提供的小程序node解决方案 #
 
-## [ Wafer2 Node.js Demo](https://github.com/tencentyun/wafer2-quickstart-nodejs) ##
+# 为了快速让学习者搭建本地的服务,现在对程序进行了修改
+
+1. **删除了对wafer2的依赖,删除了小程序登陆等相关的**
+2. **数据库中存了一个用户数据,供接口使用,无需掉登陆**
+
 
 ## 下载源码
-    git clone git@github.com:heyushuo/mpvue-shop-node.git
-
+    git clone https://github.com/heyushuo/mpvue-shop-node.git
 
 ## 开始使用
 
+### 1.项目开始前本机安装mysql5.7版本,然后创建数据库nodemysql并导入项目根目录下的nodemysql.sql
+
+### 2.项目根目录有一个config.js文件,在这里可以配置数据库相关信息账号密码等
+```javascript
+  	mysql: {
+		host: 'localhost',
+		port: 3306,
+		user: '',   
+		db: 'nodemysql',  //数据库名字
+		pass: '',   //数据库密码
+		char: 'utf8mb4'
+    };
+```
 #### 安装依赖
     npm install
 
 #### 启动项目
     npm run dev
-# 需要注意的地方 #
-### 1.项目开始前创建数据库nodemysql并导入项目根目录下的nodemysql.sql ##
-### 2.项目根目录有一个config.js文件在这里可以配置数据相关,还有本地开发环境配置 ##
-  	mysql: {
-		host: 'localhost',
-		port: 3306,
-		user: 'admin',   
-		db: 'nodemysql',  //数据库名字
-		pass: 'admin',   //数据库密码
-		char: 'utf8mb4'
-    };
-
-
-## 3.腾讯官方也提供的详细的搭建本地开发配置说明 ##
-
-[点击进入](https://cloud.tencent.com/document/product/619/11442#.E6.9C.AC.E5.9C.B0.E5.A6.82.E4.BD.95.E6.90.AD.E5.BB.BA.E5.BC.80.E5.8F.91.E7.8E.AF.E5.A2.83)
 
 # 项目目录结构 #
-本项目所有的业务逻辑都在**controllers**文件夹中  
-本项目所有的接口都写在**router文件夹下的index.js**里边
-    
-    //首页数据
+1.mysql.js存放对knex的引用(用来操作数据库使用)
+
+2.本项目所有的业务逻辑都在**controllers**文件夹中  
+
+3.本项目所有的接口都写在**router文件夹下的index.js**里边
+```javascript
+ //首页数据
     //1.首页
     router.get('/index/index', controllers.home.index)
     //2.首页品牌制造商直供的详情内的列表数据
@@ -129,6 +131,10 @@
      *  意见反馈
      */
     router.post('/feedback/submitAction', controllers.feedback.index.submitAction)
+```
+
+# 如果需要小程序登陆的可以看,腾讯提供的小程序node解决方案 #
+## [ Wafer2 Node.js Demo](https://github.com/tencentyun/wafer2-quickstart-nodejs) ##
 
 # 下方为微信小程序效果展示 #
 ### 1.首页展示和专题页效果
